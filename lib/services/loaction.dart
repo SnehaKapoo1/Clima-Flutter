@@ -10,7 +10,7 @@ class Location {
       bool isLocationServiceEnabled =
           await Geolocator.isLocationServiceEnabled();
       if (isLocationServiceEnabled == false) {
-        Future.error('Location services is enabled');
+        Future.error('Location services is not enabled');
       }
 
       permission = await Geolocator.checkPermission();
@@ -26,8 +26,10 @@ class Location {
       }
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.low);
+      latitude = position.latitude;
+      longitude = position.longitude;
     } catch (e) {
-      print(e);
+      //print(e);
     }
   }
 }

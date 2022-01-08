@@ -7,7 +7,7 @@
 
 
     <application
-        android:label="weather_app"
+        android:label="Mausam"
        android:icon="@mipmap/ic_launcher">
 
         <activity

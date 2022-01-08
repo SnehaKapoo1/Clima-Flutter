@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:weather_app/screen/loading_screen.dart';
+import 'package:weather_app/screen/city_screen.dart';
+import 'package:weather_app/screen/location_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: LoadingScreen(),
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: const LocationScreen(),
     );
   }
 }

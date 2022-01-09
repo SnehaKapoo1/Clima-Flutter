@@ -21,7 +21,7 @@ const kTextFieldInputDecoration = InputDecoration(
     Icons.location_city,
     color: Colors.white,
   ),
-  hintText: 'Search City Weather',
+  hintText: 'Search City/State Weather',
   hintStyle: TextStyle(color: Colors.white),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(
